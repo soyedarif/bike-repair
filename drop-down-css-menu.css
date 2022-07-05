@@ -1,0 +1,26 @@
+.navbutton{
+    background-color: aqua;
+    padding:11px 25px;
+    width:100px;
+    text-align:center;
+    display:inline-block;
+    position:relative; /*stack on top of each other*/
+}
+/* this is the dropdown */
+.dropdown-box{
+    display:none;
+    position:absolute; /* To push down from the bottom*/
+    z-index: 1;
+    padding-top:20px;
+    margin-left:-30px;
+}
+.navbutton:hover .dropdown-box{
+    display:block;
+}
+.dropdown-box .navbutton{
+    background-color: aquamarine;
+}
+.dropdown-box .navbutton:hover{
+    background-color:cyan;
+    transition-duration: 1s;
+}
